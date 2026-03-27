@@ -50,7 +50,7 @@ prompts
 9) https://www.webdeveducation.com/context-window-llm-code-generation/ –> github auth
 10) https://console.neon.tech/app/org-long-hill-24488465/welcome –> github auth
 11) ui.shadcn.com -> UI
-12) orm.drizzle.team
+12) orm.drizzle.team -> Neon je moderní cloudová databáze postavená na PostgreSQL — ale s architekturou navrženou pro cloud (serverless přístup).
 
 
 
