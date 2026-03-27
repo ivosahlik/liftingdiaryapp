@@ -111,3 +111,21 @@ neon - run_sql_transaction (MCP)(projectId: "late-boat-76658495", sqlStatements:
 
 [prompt 9 / default]:
 this looks great. now insert all of that example data to the liftingdiaryapp db
+
+[prompt 10 / default]:
+get data from table sets high and low weightKg
+
+⏺ neon - run_sql (MCP)(projectId: "late-boat-76658495", sql: "SELECT MAX(\"weightKg\") AS highest_weightKg, MIN(\"weightKg\") AS lowest_weightKg FROM \"sets\"")                                                                                                                                  
+⎿ [                                                                                                                                                                                                                                                                                            
+{                                                                                                                                                                                                                                                                                          
+"highest_weightkg": 105,                                                                                                                                                                                                                                                                 
+… +3 lines (ctrl+o to expand)
+
+⏺ ┌─────────┬──────────────────────────────┐                                                                                                                                                                                                                                                      
+│         │           weightKg           │                                                                                                                                                                                                                                                      
+├─────────┼──────────────────────────────┤                                                                                                                                                                                                                                                      
+│ Highest │ 105 kg                       │                                                                                                                                                                                                                                                      
+├─────────┼──────────────────────────────┤                                                                                                                                                                                                                                                      
+│ Lowest  │ 0 kg (Pull-ups — bodyweight) │                                                                                                                                                                                                                                                      
+└─────────┴──────────────────────────────┘                                                                                                                                                                                                                                                      
+                                              
