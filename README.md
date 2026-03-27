@@ -52,6 +52,20 @@ prompts
 11) ui.shadcn.com -> UI
 12) orm.drizzle.team -> Neon je moderní cloudová databáze postavená na PostgreSQL — ale s architekturou navrženou pro cloud (serverless přístup).
 13) https://ui.shadcn.com/ -> npx shadcn@latest init
+14) Clerk auth -> https://www.avg.com/en-us/random-password-generator#mac
+15) MCP https://neon.com/docs/ai/connect-mcp-clients-to-neon -> npx add-mcp https://mcp.neon.tech/mcp -> added .mcp.json
+16) ```1 server
+                                                                                                                                                                                                                                                                                                  
+    Project MCPs (/Users/ivovosahlik/Public/workspace-ai-claude/liftingdiaryapp/.mcp.json)                                                                                                                                                                                                        
+❯ neon · △ needs authentication
+
+https://code.claude.com/docs/en/mcp for help
+↑↓ to navigate · Enter to confirm · Esc to cancel```
+
+17) neon · ✔ connected         
+18) 
+
+
 
 
 

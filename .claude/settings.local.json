@@ -2,8 +2,17 @@
   "permissions": {
     "allow": [
       "Bash(npm install:*)",
-      "Bash(npm i:*)"
+      "Bash(npm i:*)",
+      "Bash(grep -A 20 \"export.*Show\\\\|const Show\\\\|function Show\" node_modules/@clerk/react/dist/*.js)",
+      "Bash(grep -r SignInButton node_modules/@clerk/react/dist/*.mjs)",
+      "mcp__neon__list_projects",
+      "mcp__neon__get_database_tables",
+      "mcp__neon__run_sql_transaction"
     ],
     "deny": []
-  }
+  },
+  "enableAllProjectMcpServers": true,
+  "enabledMcpjsonServers": [
+    "neon"
+  ]
 }
