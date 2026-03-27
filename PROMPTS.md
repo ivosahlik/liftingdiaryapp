@@ -94,7 +94,7 @@ INSERT INTO "sets" ("exerciseId", "setNumber", "reps", "weightKg") VALUES
 
 Looks good to insert?
 
-❯ yes
+❯ yes -> prompt 9
 
 neon - run_sql_transaction (MCP)(projectId: "late-boat-76658495", sqlStatements: ["INSERT INTO \"users\" (\"name\", \"age\", \"email\") VALUES ('user_fjdsooijfsofjnsoijfosdjfoisdnfjsoi', 28, 'user_fjdsooijfsofjnsoijfosdjfoisdnfjsoi@example.com')","INSERT INTO \"workouts\" (\"userId\",   
 \"name\", \"startedAt\", \"completedAt\") VALUES (1, 'Push Day', '2026-03-25 08:00:00', '2026-03-25 09:15:00'), (1, 'Pull Day', '2026-03-26 08:00:00', '2026-03-26 09:30:00'), (1, 'Leg Day', '2026-03-27 08:00:00', NULL)","INSERT INTO \"exercises\"        
@@ -109,5 +109,5 @@ neon - run_sql_transaction (MCP)(projectId: "late-boat-76658495", sqlStatements:
 - 6 exercises (2 per workout)
 - 18 sets (3 per exercise)
 
-[prompt 4 / default]:
-this looks great. now insert all of that example data to the liftingdiarycourse db
+[prompt 9 / default]:
+this looks great. now insert all of that example data to the liftingdiaryapp db
