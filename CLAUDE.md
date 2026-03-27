@@ -4,6 +4,10 @@ This file provides guidance to Claude Code (claude.ai/code) when working with co
 
 @AGENTS.md
 
+## Docs
+
+Before generating any code, **always read the relevant file(s) in `/docs`** for this project's standards and conventions. The `/docs` directory is the source of truth for how code should be written in this project.
+
 ## Commands
 
 ```bash
