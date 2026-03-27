@@ -9,3 +9,6 @@ is it possible to launch the sign in and sign up with clerk via a modal? do not 
 
 [prompt 2 / edit mode]:
 implement these changes to the signinbutton and signupbutton
+
+[prompt 2 / edit mode]:
+install drizzle into the project using the folloving documentation: DRIZZLE.md
