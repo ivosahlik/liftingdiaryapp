@@ -38,9 +38,10 @@ Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/bui
 
 
 # Claude Code
-
-claude
-/init
+prompts
+1) claude
+2) /init
+3) create .claude/settings.local.json with empty json
 
 
 
