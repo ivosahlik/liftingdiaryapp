@@ -51,7 +51,7 @@ prompts
 10) https://console.neon.tech/app/org-long-hill-24488465/welcome –> github auth
 11) ui.shadcn.com -> UI
 12) orm.drizzle.team -> Neon je moderní cloudová databáze postavená na PostgreSQL — ale s architekturou navrženou pro cloud (serverless přístup).
-13) npx shadcn@latest init
+13) https://ui.shadcn.com/ -> npx shadcn@latest init
 
 
 
