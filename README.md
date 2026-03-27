@@ -47,7 +47,7 @@ prompts
 6) prompts
 7) /context
 8) /clear
-9) 
+9) https://www.webdeveducation.com/context-window-llm-code-generation/
 
 
 
