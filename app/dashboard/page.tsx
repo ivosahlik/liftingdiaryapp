@@ -3,7 +3,7 @@
 import { useState } from "react";
 import { format, isSameDay } from "date-fns";
 import { CalendarIcon } from "lucide-react";
-import { Button } from "@/components/ui/button";
+import { buttonVariants } from "@/components/ui/button";
 import { Calendar } from "@/components/ui/calendar";
 import { Popover, PopoverContent, PopoverTrigger } from "@/components/ui/popover";
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
@@ -109,11 +109,9 @@ export default function DashboardPage() {
       <h1 className="text-2xl font-bold">Dashboard</h1>
 
       <Popover open={open} onOpenChange={setOpen}>
-        <PopoverTrigger asChild>
-          <Button variant="outline" className="w-48 justify-start gap-2">
-            <CalendarIcon className="size-4" />
-            {format(date, "do MMM yyyy")}
-          </Button>
+        <PopoverTrigger className={buttonVariants({ variant: "outline", size: "default" }) + " w-48 justify-start"}>
+          <CalendarIcon className="size-4" />
+          {format(date, "do MMM yyyy")}
         </PopoverTrigger>
         <PopoverContent className="w-auto p-0" align="start">
           <Calendar
