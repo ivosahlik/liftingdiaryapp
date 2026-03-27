@@ -42,6 +42,10 @@ prompts
 1) claude
 2) /init
 3) create .claude/settings.local.json with empty json
+4) clerk -> https://dashboard.clerk.com/
+5) @ .. you can find right path, \ .. new line
+
+
 
 
 
