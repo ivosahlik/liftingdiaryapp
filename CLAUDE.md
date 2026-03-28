@@ -27,6 +27,17 @@ No test framework is configured yet.
 - **Tailwind CSS v4** via `@tailwindcss/postcss` — new CSS-first config approach, no `tailwind.config.js`
 - **ESLint v9** flat config (`eslint.config.mjs`)
 
+## Code Generation Guidelines
+
+**IMPORTANT**: When generating any code, ALWAYS first refer to the relevant documentation files within the `/docs` directory to understand existing patterns, conventions, and best practices before implementation:
+
+- /docs/auth.md
+- /docs/data-fetching.md
+- /docs/data-mutations.md
+- /docs/routing.md
+- /docs/server-components.md
+- /docs/ui.md
+
 ## Architecture
 
 Early-stage app — only the Next.js App Router scaffold exists so far.

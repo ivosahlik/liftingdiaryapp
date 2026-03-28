@@ -2,6 +2,19 @@ import { db } from "@/db";
 import { workoutsTable, exercisesTable, setsTable } from "@/db/schema";
 import { and, gte, lt, eq } from "drizzle-orm";
 
+export async function insertWorkout(
+  userId: string,
+  name: string,
+  date: string
+): Promise<{ id: number }> {
+  const startedAt = new Date(`${date}T00:00:00`);
+  const [workout] = await db
+    .insert(workoutsTable)
+    .values({ userId, name, startedAt })
+    .returning({ id: workoutsTable.id });
+  return workout;
+}
+
 export type SetRow = {
   id: number;
   setNumber: number;

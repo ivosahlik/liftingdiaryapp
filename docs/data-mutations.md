@@ -111,3 +111,37 @@ export async function createWorkout(input: CreateWorkoutInput) {
 - Always use `safeParse` so you can return a meaningful error rather than letting Zod throw.
 - Derive the TypeScript type from the schema with `z.infer<typeof Schema>` — do not duplicate type definitions.
 - Validate before calling `auth()` to fail fast on bad input.
+
+## Rule: No `redirect()` Inside Server Actions
+
+**Do NOT call `redirect()` from within a Server Action. Redirects MUST be handled client-side after the Server Action resolves.**
+
+Return enough data for the client to determine where to navigate, then use `router.push()` in the Client Component:
+
+```ts
+// ✅ Correct — actions.ts
+export async function createWorkout(input: CreateWorkoutInput) {
+  // ... validate, auth, insert ...
+  return { date: parsed.data.date };
+}
+```
+
+```tsx
+// ✅ Correct — WorkoutForm.tsx (Client Component)
+const result = await createWorkout(input);
+if (result?.error) {
+  setError(result.error);
+} else if (result?.date) {
+  router.push(`/dashboard?date=${result.date}`);
+}
+```
+
+```ts
+// ❌ Wrong — actions.ts
+import { redirect } from "next/navigation";
+
+export async function createWorkout(input: CreateWorkoutInput) {
+  // ...
+  redirect("/dashboard"); // Do not do this
+}
+```
