@@ -37,6 +37,57 @@ export type WorkoutWithDetails = {
   exercises: ExerciseWithSets[];
 };
 
+export async function getWorkoutById(
+  userId: string,
+  workoutId: number
+): Promise<WorkoutWithDetails | null> {
+  const [workout] = await db
+    .select()
+    .from(workoutsTable)
+    .where(and(eq(workoutsTable.id, workoutId), eq(workoutsTable.userId, userId)));
+
+  if (!workout) return null;
+
+  const exercises = await db
+    .select()
+    .from(exercisesTable)
+    .where(eq(exercisesTable.workoutId, workout.id))
+    .orderBy(exercisesTable.order);
+
+  const exercisesWithSets: ExerciseWithSets[] = await Promise.all(
+    exercises.map(async (exercise) => {
+      const sets = await db
+        .select({
+          id: setsTable.id,
+          setNumber: setsTable.setNumber,
+          reps: setsTable.reps,
+          weightKg: setsTable.weightKg,
+        })
+        .from(setsTable)
+        .where(eq(setsTable.exerciseId, exercise.id))
+        .orderBy(setsTable.setNumber);
+      return { ...exercise, sets };
+    })
+  );
+
+  return { ...workout, exercises: exercisesWithSets };
+}
+
+export async function updateWorkout(
+  userId: string,
+  workoutId: number,
+  name: string,
+  date: string
+): Promise<boolean> {
+  const startedAt = new Date(`${date}T00:00:00`);
+  const result = await db
+    .update(workoutsTable)
+    .set({ name, startedAt })
+    .where(and(eq(workoutsTable.id, workoutId), eq(workoutsTable.userId, userId)))
+    .returning({ id: workoutsTable.id });
+  return result.length > 0;
+}
+
 export async function getWorkoutsForDate(
   userId: string,
   date: string

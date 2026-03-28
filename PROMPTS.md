@@ -198,3 +198,9 @@ the redirect should be done client side, not within the server action
 
 [prompt 23 / edit mode]:
 add into the docs/data-mutations.md file a rule that says the redirect() function should not be used within server actions. redirects should instead be done client side after the call to a server action resolves.
+
+[prompt 24 / edit mode]:
+create a new page at /dashboard/workout/[workoutId] this page will be the edit / update workout page.
+
+[prompt 25 / edit mode]:
+create a new docs/server-components.md file outlining the coding standards for server components specifically accessing params MUST be awaited because this is a next js 15 project where params HAVE to be awaited as it's a promise.

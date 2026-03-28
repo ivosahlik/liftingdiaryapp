@@ -20,7 +20,8 @@
       "mcp__playwright__execute-code",
       "Bash(git add:*)",
       "Bash(git commit:*)",
-      "Bash(git checkout:*)"
+      "Bash(git checkout:*)",
+      "Bash(git merge:*)"
     ],
     "deny": []
   },
