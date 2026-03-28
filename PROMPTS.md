@@ -175,6 +175,7 @@ This looks great, implement these changes.
 This all words if I manually type into the url the date that I want to load. However whenever I click on a new date within the calendar the issue still exists.
 
 
+# GIT
 [prompt 17 / edit mode]:
 Give me a plan on how you would merge the dashboard-page branch into the main branch then resolve any merge issues, and create a new branch off of the main branch called create-workout-page. Do not implement anything just yet. Just give me a plan and outline.
 
