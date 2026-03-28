@@ -154,6 +154,30 @@ create a /dashboard page with a datepicker set to the current date. this page sh
 create a new docs/data-fetching.md file and highlight that ALL data fetching within this app should be done via server components. data should NOT be fetched via route handlers, or via client components, or any other way, ONLY via server components. This is incredibly important.
 database queries must ALWAYS be done via helper functions within the /data directory. these helper functions must use drizzle ORM to query the database. DO NOT USE RAW SQL. It's incredibly important that a logged in user can ONLY access their own data. They SHOULD NOT be able to access any other data other than their own.
 
-[prompt 26 / edit mode]:
+[prompt 16 / edit mode]:
 implement the data fetching for workouts for the currently logged in user for the dashboard page and remove any dummy data within that page
+
+
+/clear
+
+[default mode]:
+I want you to outline a plan on how to fix the issue in the /dashboard page @src/app/dashboard/page.tsx where whenever a new date is selected in the calendar the data isn't currently loading for that particular date
+
+[edit mode]:
+This looks great, implement these changes.
+
+/clear
+
+[edit mode]:
+@src/app/dashboard/page.tsx @src/app/dashboard/calendar-client.tsx there is an issue with the calendar whenever I select a date, the previous date is selected. For example if I select 25th September in the calendar, the selected date changes to the 24th September. Could this be a timezone issue?
+
+[edit mode]:
+This all words if I manually type into the url the date that I want to load. However whenever I click on a new date within the calendar the issue still exists.
+
+
+[prompt 17 / edit mode]:
+Give me a plan on how you would merge the dashboard-page branch into the main branch then resolve any merge issues, and create a new branch off of the main branch called create-workout-page. Do not implement anything just yet. Just give me a plan and outline.
+
+[prompt 18 / edit mode]:
+ok great. now implement this plan.
                                               

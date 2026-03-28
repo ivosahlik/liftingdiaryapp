@@ -9,7 +9,15 @@
       "mcp__neon__get_database_tables",
       "mcp__neon__run_sql_transaction",
       "mcp__neon__run_sql",
-      "Bash(npx:*)"
+      "Bash(npx:*)",
+      "Bash(npm run:*)",
+      "Bash(node -e \"require\\(''dotenv''\\).config\\({ path: ''.env.local'' }\\)\")",
+      "Bash(node:*)",
+      "mcp__playwright__init-browser",
+      "WebFetch(domain:www.membrania.eu)",
+      "mcp__playwright__get-screenshot",
+      "mcp__playwright__get-text-snapshot",
+      "mcp__playwright__execute-code"
     ],
     "deny": []
   },

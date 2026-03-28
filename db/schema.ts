@@ -9,9 +9,7 @@ export const usersTable = pgTable("users", {
 
 export const workoutsTable = pgTable("workouts", {
   id: integer().primaryKey().generatedAlwaysAsIdentity(),
-  userId: integer()
-    .notNull()
-    .references(() => usersTable.id),
+  userId: varchar({ length: 255 }).notNull(),
   name: varchar({ length: 255 }).notNull(),
   startedAt: timestamp().notNull().defaultNow(),
   completedAt: timestamp(),

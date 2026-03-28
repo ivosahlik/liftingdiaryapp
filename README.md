@@ -63,7 +63,9 @@ https://code.claude.com/docs/en/mcp for help
 ↑↓ to navigate · Enter to confirm · Esc to cancel```
 
 17) neon · ✔ connected         
-18) 
+18) npx playwright install chromium - without chrom
+19) npx playwright install - chrom is opened
+19) add mcp playwright server to settings.local.json
 
 
 
