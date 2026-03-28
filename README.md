@@ -67,6 +67,10 @@ https://code.claude.com/docs/en/mcp for help
 19) npx playwright install - chrom is opened
 19) add mcp playwright server to settings.local.json
 20) PROMPT -> open https://www.membrania.eu and add most expensive product to cart and the cheapest product to cart, after addind products to cart close window
+21) prompts
+22) create folder commands -> merge-and-create-branch.md and close claude code in terminal and run again
+run in terminal /merge-and-create-branch with param
+23) /merge-and-create-branch edit-workout-page test
 
 
 
