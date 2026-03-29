@@ -184,3 +184,16 @@ cd /Users/ivovosahlik/.claude/commands/personal && code .
 
 38) add command branch.md
     /branch feature ABC-77 Improve UI
+
+39) at least you want full automatic pipeline
+
+/task-run
+
+you must use:
+
+claude --dangerously-skip-permissions
+
+40) SAFE mode → nic se nespouští (jen generuje příkazy)
+    AUTO mode → příkazy se rovnou vykonají
+/push safe   → jen vypíše git push
+/push auto   → provede push
