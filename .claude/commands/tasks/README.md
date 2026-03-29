@@ -1,3 +1,5 @@
+# AI developer assistent
+
 /task-pick      → vezme issue
 /task-branch    → vytvoří branch
 /task-implement → implementace
