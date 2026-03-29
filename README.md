@@ -35,7 +35,7 @@ The easiest way to deploy your Next.js app is to use the [Vercel Platform](https
 
 Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
 
-
+#
 
 # Claude Code
 prompts
@@ -70,8 +70,26 @@ https://code.claude.com/docs/en/mcp for help
 21) prompts
 22) create folder commands -> merge-and-create-branch.md and close claude code in terminal and run again
 run in terminal /merge-and-create-branch with param
-23) /merge-and-create-branch edit-workout-page test
+23) /merge-and-create-branch edit-workout-page test - click tab  
 
+24) create agents -> /agents
+
+
+
+
+
+
+
+
+## Claude Cmds
+
+/config
+
+### Toggle thinking mode
+/config -> Thinking mode -> hit option + command + t
+
+### Preferred output style
+/config -> Output style
 
 
 

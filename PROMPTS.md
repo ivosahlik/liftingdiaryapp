@@ -204,3 +204,48 @@ create a new page at /dashboard/workout/[workoutId] this page will be the edit /
 
 [prompt 25 / edit mode]:
 create a new docs/server-components.md file outlining the coding standards for server components specifically accessing params MUST be awaited because this is a next js 15 project where params HAVE to be awaited as it's a promise.
+
+
+### Create new agents -> /agents
+whenever a new documentation file is added into the /docs directory update the
+CLAUDE.md file to reference this new within the list of documentation files
+under the ## Code Generation Guidlines section
+
+Create new agent
+Select tools
+
+
+    [ Continue ]
+────────────────────────────────────────
+☐ All tools
+☒ Read-only tools
+☒ Edit tools
+☐ Execution tools
+☐ MCP tools
+☐ Other tools
+
+Model determines the agent's reasoning capabilities and speed.
+
+❯ 1. Sonnet ✔             Balanced performance - best for most agents
+2. Opus                 Most capable for complex reasoning tasks                                                                                                                                                                                                                              
+3. Haiku                Fast and efficient for simple tasks                                                                                                                                                                                                                                   
+4. Inherit from parent  Use the same model as the main conversation
+
+Create new agent
+Configure agent memory
+
+❯ 1. Project scope (.claude/agent-memory/) (Recommended)                      
+2. None (no persistent memory)                                             
+3. User scope (~/.claude/agent-memory/)                            
+4. Local scope (.claude/agent-memory-local/)     
+
+/agents
+
+──────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────
+Agents               
+6 agents
+
+❯ Create new agent
+
+    Project agents
+    docs-claude-md-syncer · sonnet · project memory    
