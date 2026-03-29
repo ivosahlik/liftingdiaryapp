@@ -91,6 +91,10 @@ run in terminal /merge-and-create-branch with param
 26) Deploy to Vercel - Auth via github cloud
 https://vercel.com/
 
+27) install github app
+claude
+/install-github-app
+
 
 
 
