@@ -254,3 +254,15 @@ Agents
 [prompt 27 / edit mode]:
 /create-docs routing\
 all routes in this app should be accessed via /dashboard. the /dashboard page and any sub pages should be protected routes that are only accessibly by logged in users. route protection should be done via the next js middleware
+
+
+[prompt 28 / edit mode]:
+How would you implement the calendar on the main /dashboard page as a popover rather than an always-visible calendar. whwnever a date is selected from the calendar , popover must close
+
+make sure the log new workout button links to the /dashboard/workout/new page
+
+
+[prompt 29 / edit mode]:
+create a plan on how to implement logging excercises and sets for a particular workout for the /dashboard/workout/[workoutId] page
+
+execute this plan apart from step 6. Seed excercise catalog
