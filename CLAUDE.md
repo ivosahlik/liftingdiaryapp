@@ -31,9 +31,11 @@ No test framework is configured yet.
 
 **IMPORTANT**: When generating any code, ALWAYS first refer to the relevant documentation files within the `/docs` directory to understand existing patterns, conventions, and best practices before implementation:
 
+- /docs/all.md
 - /docs/auth.md
 - /docs/data-fetching.md
 - /docs/data-mutations.md
+- /docs/routing.md
 - /docs/server-components.md
 - /docs/ui.md
 
