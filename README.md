@@ -172,12 +172,15 @@ Ensure accessibility (contrast, readability)
 ```
 
 35) mkdir -p ~/.claude/commands -> global/shared folder
-36) create file ~/.claude/commands/commit.md
+36) create file ~/.claude/commands/personal/commit.md
 Generate a commit message based on the changes within the current branch. The commit message must be short and
 to-the-point and provide a summary of the changes. Then commit those changes to the current branch.
 37) Open visual code
-mkdir -p ~/.claude/commands
-cd /Users/ivovosahlik/.claude/commands && code .
+mkdir -p ~/.claude/commands/personal
+cd /Users/ivovosahlik/.claude/commands/personal && code .
+
+/commit
+/personal:commit
 
 38) add command branch.md
     /branch feature ABC-77 Improve UI
