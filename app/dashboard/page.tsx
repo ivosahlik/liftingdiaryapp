@@ -13,6 +13,7 @@ import {
   TableHeader,
   TableRow,
 } from "@/components/ui/table";
+import Link from "next/link";
 import { DatePicker } from "./DatePicker";
 import { getWorkoutsForDate } from "@/data/workouts";
 
@@ -42,7 +43,8 @@ export default async function DashboardPage({
       ) : (
         <div className="space-y-4">
           {workouts.map((workout) => (
-            <Card key={workout.id}>
+            <Link key={workout.id} href={`/dashboard/workout/${workout.id}`} className="block">
+            <Card className="hover:bg-accent transition-colors cursor-pointer">
               <CardHeader className="pb-3">
                 <div className="flex items-center justify-between">
                   <CardTitle className="text-base">{workout.name}</CardTitle>
@@ -77,6 +79,7 @@ export default async function DashboardPage({
                 ))}
               </CardContent>
             </Card>
+            </Link>
           ))}
         </div>
       )}
