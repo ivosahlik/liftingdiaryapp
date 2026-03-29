@@ -117,7 +117,57 @@ set @claude implement this.
 ![Screenshot 2026-03-29 at 15.07.17.png](Screenshot%202026-03-29%20at%2015.07.17.png)
 
 
+30) Create new issue
+title: Use shadcn ui button for the sign in and sign up buttons
+description: Currently these buttons are rendering as button tags styled eith tailwind css, but they should be rendering as shadcn ui buttons instead
 
+@claude fix this issue.
 
+31) Create new issue
+title: Mark the entire site dark mode
+   
+@claude implement this
 
+32)  Create new issue
+title: Make the workouts clickable on the /dashboard page
+description: Each workout must be a link navigates the user to /dashboard/workout/[workoutid]
+
+@claude fix this issue
+
+33)  Create new issue
+     title: Change title header
+     description: Change title header Lifting Diary to red color, use shadcn color
+
+@claude implement this
+
+34) Create new issue
+    Task: Implement Global Dark Mode
+
+description: 
+```
+Task: Implement Global Dark Mode
+Description
+Implement a global dark mode for the entire application (Next.js + shadcn/ui), including:
+
+A theme switcher supporting light / dark / system modes
+Persistent user preference (e.g. via localStorage)
+Proper SSR handling to avoid flickering (FOUC)
+Full compatibility across all UI components
+Requirements
+Use next-themes for theme management
+Configure Tailwind with darkMode: "class"
+Ensure <html> includes suppressHydrationWarning
+Apply theme classes globally (class="dark")
+All components must support both light and dark variants
+Acceptance Criteria
+User can switch between light, dark, and system themes
+Selected theme persists after page reload
+No visual flicker during initial page load
+All pages and components correctly reflect the selected theme
+Compatible with shadcn/ui components
+Notes
+Follow shadcn/ui theming conventions
+Prefer CSS variables (--background, --foreground)
+Ensure accessibility (contrast, readability)
+```
 
