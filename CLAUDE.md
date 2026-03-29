@@ -34,7 +34,6 @@ No test framework is configured yet.
 - /docs/auth.md
 - /docs/data-fetching.md
 - /docs/data-mutations.md
-- /docs/routing.md
 - /docs/server-components.md
 - /docs/ui.md
 
