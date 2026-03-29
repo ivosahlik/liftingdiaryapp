@@ -106,9 +106,15 @@ git push origin main
 ⎿  GitHub Actions setup complete!```
 ```
 
-28)
+28) Automate GitHub issue fixing with Claude Code GitHub Actions (part 1) -> in github create new issue
 
+29) Add title - if a user logged in and trying to access the main homepage, redirect them to the /dashboard page
 
+Add a comment -> choose @claude
+set @claude implement this.
+
+![Screenshot 2026-03-29 at 15.05.42.png](Screenshot%202026-03-29%20at%2015.05.42.png)
+![Screenshot 2026-03-29 at 15.07.17.png](Screenshot%202026-03-29%20at%2015.07.17.png)
 
 
 
