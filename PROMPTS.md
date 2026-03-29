@@ -205,7 +205,7 @@ create a new page at /dashboard/workout/[workoutId] this page will be the edit /
 [prompt 25 / edit mode]:
 create a new docs/server-components.md file outlining the coding standards for server components specifically accessing params MUST be awaited because this is a next js 15 project where params HAVE to be awaited as it's a promise.
 
-
+[prompt 26 / edit mode]:
 ### Create new agents -> /agents
 whenever a new documentation file is added into the /docs directory update the
 CLAUDE.md file to reference this new within the list of documentation files
@@ -248,4 +248,9 @@ Agents
 ❯ Create new agent
 
     Project agents
-    docs-claude-md-syncer · sonnet · project memory    
+    docs-claude-md-syncer · sonnet · project memory
+
+
+[prompt 27 / edit mode]:
+/create-docs routing\
+all routes in this app should be accessed via /dashboard. the /dashboard page and any sub pages should be protected routes that are only accessibly by logged in users. route protection should be done via the next js middleware
