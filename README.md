@@ -201,3 +201,11 @@ claude --dangerously-skip-permissions
 
 
 41) AI autonomous agent - použitelný setup (cron + worker + Claude CLI workflow)
+
+42) /gh-task-start.md
+⏺ Done. Issue moved to In Progress:
+
+- Issue: #19
+- Title: Change title header
+- Status: Backlog to -> In Progress                                                                                                                                                                                                                                                                           
+                               
