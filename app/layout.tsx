@@ -2,6 +2,8 @@ import type { Metadata } from "next";
 import { Geist, Geist_Mono } from "next/font/google";
 import { ClerkProvider, SignInButton, SignUpButton, Show, UserButton } from "@clerk/nextjs";
 import { Button } from "@/components/ui/button";
+import { ThemeProvider } from "@/components/theme-provider";
+import { ThemeToggle } from "@/components/theme-toggle";
 import "./globals.css";
 
 const geistSans = Geist({
@@ -27,28 +29,39 @@ export default function RootLayout({
   return (
     <html
       lang="en"
-      className={`${geistSans.variable} ${geistMono.variable} h-full antialiased dark`}
+      className={`${geistSans.variable} ${geistMono.variable} h-full antialiased`}
+      suppressHydrationWarning
     >
       <body className="min-h-full flex flex-col">
-        <ClerkProvider>
-          <header className="flex items-center justify-between px-6 py-3 border-b border-black/[.08] dark:border-white/[.08]">
-            <span className="text-lg font-semibold tracking-tight text-destructive">Lifting Diary</span>
-            <Show when="signed-out">
+        <ThemeProvider
+          attribute="class"
+          defaultTheme="system"
+          enableSystem
+          disableTransitionOnChange
+        >
+          <ClerkProvider>
+            <header className="flex items-center justify-between px-6 py-3 border-b border-black/[.08] dark:border-white/[.08]">
+              <span className="text-lg font-semibold tracking-tight text-destructive">Lifting Diary</span>
               <div className="flex items-center gap-3">
-                <SignInButton mode="modal">
-                  <Button variant="outline" size="lg">Sign in</Button>
-                </SignInButton>
-                <SignUpButton mode="modal">
-                  <Button size="lg">Sign up</Button>
-                </SignUpButton>
+                <Show when="signed-out">
+                  <div className="flex items-center gap-3">
+                    <SignInButton mode="modal">
+                      <Button variant="outline" size="lg">Sign in</Button>
+                    </SignInButton>
+                    <SignUpButton mode="modal">
+                      <Button size="lg">Sign up</Button>
+                    </SignUpButton>
+                  </div>
+                </Show>
+                <Show when="signed-in">
+                  <UserButton />
+                </Show>
+                <ThemeToggle />
               </div>
-            </Show>
-            <Show when="signed-in">
-              <UserButton />
-            </Show>
-          </header>
-          {children}
-        </ClerkProvider>
+            </header>
+            {children}
+          </ClerkProvider>
+        </ThemeProvider>
       </body>
     </html>
   );
