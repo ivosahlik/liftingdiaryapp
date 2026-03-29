@@ -75,11 +75,7 @@ run in terminal /merge-and-create-branch with param
 24) create agents -> /agents
 
 
-
-
-
-
-
+25) 
 
 ## Claude Cmds
 
@@ -90,6 +86,10 @@ run in terminal /merge-and-create-branch with param
 
 ### Preferred output style
 /config -> Output style
+
+
+26) Deploy to Vercel - Auth via github cloud
+https://vercel.com/
 
 
 
