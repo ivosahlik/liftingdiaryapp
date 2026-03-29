@@ -1,6 +1,9 @@
 import type { Metadata } from "next";
 import { Geist, Geist_Mono } from "next/font/google";
 import { ClerkProvider, SignInButton, SignUpButton, Show, UserButton } from "@clerk/nextjs";
+import { Button } from "@/components/ui/button";
+import { ThemeProvider } from "@/components/theme-provider";
+import { ThemeToggle } from "@/components/theme-toggle";
 import "./globals.css";
 
 const geistSans = Geist({
@@ -27,31 +30,38 @@ export default function RootLayout({
     <html
       lang="en"
       className={`${geistSans.variable} ${geistMono.variable} h-full antialiased`}
+      suppressHydrationWarning
     >
       <body className="min-h-full flex flex-col">
-        <ClerkProvider>
-          <header className="flex items-center justify-between px-6 py-3 border-b border-black/[.08] dark:border-white/[.08]">
-            <span className="text-lg font-semibold tracking-tight">Lifting Diary</span>
-            <Show when="signed-out">
+        <ThemeProvider
+          attribute="class"
+          defaultTheme="system"
+          enableSystem
+          disableTransitionOnChange
+        >
+          <ClerkProvider>
+            <header className="flex items-center justify-between px-6 py-3 border-b border-black/[.08] dark:border-white/[.08]">
+              <span className="text-lg font-semibold tracking-tight text-destructive">Lifting Diary</span>
               <div className="flex items-center gap-3">
-                <SignInButton mode="modal">
-                  <button className="h-9 px-4 rounded-full border border-black/[.08] dark:border-white/[.145] text-sm font-medium transition-colors hover:border-transparent hover:bg-black/[.04] dark:hover:bg-[#1a1a1a]">
-                    Sign in
-                  </button>
-                </SignInButton>
-                <SignUpButton mode="modal">
-                  <button className="h-9 px-4 rounded-full bg-foreground text-background text-sm font-medium transition-colors hover:bg-[#383838] dark:hover:bg-[#ccc]">
-                    Sign up
-                  </button>
-                </SignUpButton>
+                <Show when="signed-out">
+                  <div className="flex items-center gap-3">
+                    <SignInButton mode="modal">
+                      <Button variant="outline" size="lg">Sign in</Button>
+                    </SignInButton>
+                    <SignUpButton mode="modal">
+                      <Button size="lg">Sign up</Button>
+                    </SignUpButton>
+                  </div>
+                </Show>
+                <Show when="signed-in">
+                  <UserButton />
+                </Show>
+                <ThemeToggle />
               </div>
-            </Show>
-            <Show when="signed-in">
-              <UserButton />
-            </Show>
-          </header>
-          {children}
-        </ClerkProvider>
+            </header>
+            {children}
+          </ClerkProvider>
+        </ThemeProvider>
       </body>
     </html>
   );
