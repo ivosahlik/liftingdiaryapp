@@ -179,4 +179,5 @@ to-the-point and provide a summary of the changes. Then commit those changes to 
 mkdir -p ~/.claude/commands
 cd /Users/ivovosahlik/.claude/commands && code .
 
-38)
+38) add command branch.md
+    /branch feature ABC-77 Improve UI
