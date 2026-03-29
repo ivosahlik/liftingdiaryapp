@@ -17,7 +17,13 @@
       "WebFetch(domain:www.membrania.eu)",
       "mcp__playwright__get-screenshot",
       "mcp__playwright__get-text-snapshot",
-      "mcp__playwright__execute-code"
+      "mcp__playwright__execute-code",
+      "Bash(git add:*)",
+      "Bash(git commit:*)",
+      "Bash(git checkout:*)",
+      "Bash(git merge:*)",
+      "Bash(npm ls:*)",
+      "Bash(npm show:*)"
     ],
     "deny": []
   },

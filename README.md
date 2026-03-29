@@ -35,7 +35,7 @@ The easiest way to deploy your Next.js app is to use the [Vercel Platform](https
 
 Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
 
-
+#
 
 # Claude Code
 prompts
@@ -66,6 +66,34 @@ https://code.claude.com/docs/en/mcp for help
 18) npx playwright install chromium - without chrom
 19) npx playwright install - chrom is opened
 19) add mcp playwright server to settings.local.json
+20) PROMPT -> open https://www.membrania.eu and add most expensive product to cart and the cheapest product to cart, after addind products to cart close window
+21) prompts
+22) create folder commands -> merge-and-create-branch.md and close claude code in terminal and run again
+run in terminal /merge-and-create-branch with param
+23) /merge-and-create-branch edit-workout-page test - click tab  
+
+24) create agents -> /agents
+
+
+25) 
+
+## Claude Cmds
+
+/config
+
+### Toggle thinking mode
+/config -> Thinking mode -> hit option + command + t
+
+### Preferred output style
+/config -> Output style
+
+
+26) Deploy to Vercel - Auth via github cloud
+https://vercel.com/
+
+27) install github app
+claude
+/install-github-app
 
 
 

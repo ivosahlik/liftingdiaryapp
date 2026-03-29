@@ -175,9 +175,82 @@ This looks great, implement these changes.
 This all words if I manually type into the url the date that I want to load. However whenever I click on a new date within the calendar the issue still exists.
 
 
+# GIT
 [prompt 17 / edit mode]:
 Give me a plan on how you would merge the dashboard-page branch into the main branch then resolve any merge issues, and create a new branch off of the main branch called create-workout-page. Do not implement anything just yet. Just give me a plan and outline.
 
 [prompt 18 / edit mode]:
 ok great. now implement this plan.
-                                              
+
+[prompt 19 / edit mode]:
+create a new auth.md documentation file in the /docs directory. this file should highlight the coding standards for everything to do with auth in this app, specifically that this app uses clerk for authentication.
+
+[prompt 20 / edit mode]:
+create a data-mutations.md documentation file for the coding standards for everything to do with data mutations in this app. Specifically data mutations MUST be done via helper functions with the src/data directory which wrap db calls via drizzle orm. all data mutations MUST be done via server actions within colocated files named actions.ts. all server actions params must be typed and should NOT have the FormData data type. ALL server actions MUST validate the arguments passed to them via zod.
+
+
+
+[prompt 21 / edit mode]:
+create a new page at /dashboard/workout/new with a form to create a new workout.
+
+[prompt 22 / edit mode]:
+the redirect should be done client side, not within the server action
+
+[prompt 23 / edit mode]:
+add into the docs/data-mutations.md file a rule that says the redirect() function should not be used within server actions. redirects should instead be done client side after the call to a server action resolves.
+
+[prompt 24 / edit mode]:
+create a new page at /dashboard/workout/[workoutId] this page will be the edit / update workout page.
+
+[prompt 25 / edit mode]:
+create a new docs/server-components.md file outlining the coding standards for server components specifically accessing params MUST be awaited because this is a next js 15 project where params HAVE to be awaited as it's a promise.
+
+[prompt 26 / edit mode]:
+### Create new agents -> /agents
+whenever a new documentation file is added into the /docs directory update the
+CLAUDE.md file to reference this new within the list of documentation files
+under the ## Code Generation Guidlines section
+
+Create new agent
+Select tools
+
+
+    [ Continue ]
+────────────────────────────────────────
+☐ All tools
+☒ Read-only tools
+☒ Edit tools
+☐ Execution tools
+☐ MCP tools
+☐ Other tools
+
+Model determines the agent's reasoning capabilities and speed.
+
+❯ 1. Sonnet ✔             Balanced performance - best for most agents
+2. Opus                 Most capable for complex reasoning tasks                                                                                                                                                                                                                              
+3. Haiku                Fast and efficient for simple tasks                                                                                                                                                                                                                                   
+4. Inherit from parent  Use the same model as the main conversation
+
+Create new agent
+Configure agent memory
+
+❯ 1. Project scope (.claude/agent-memory/) (Recommended)                      
+2. None (no persistent memory)                                             
+3. User scope (~/.claude/agent-memory/)                            
+4. Local scope (.claude/agent-memory-local/)     
+
+/agents
+
+──────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────
+Agents               
+6 agents
+
+❯ Create new agent
+
+    Project agents
+    docs-claude-md-syncer · sonnet · project memory
+
+
+[prompt 27 / edit mode]:
+/create-docs routing\
+all routes in this app should be accessed via /dashboard. the /dashboard page and any sub pages should be protected routes that are only accessibly by logged in users. route protection should be done via the next js middleware
