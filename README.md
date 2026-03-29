@@ -171,5 +171,12 @@ Prefer CSS variables (--background, --foreground)
 Ensure accessibility (contrast, readability)
 ```
 
-35) mkdir -p ~/.claude/commands -> global folder
-36) 
+35) mkdir -p ~/.claude/commands -> global/shared folder
+36) create file ~/.claude/commands/commit.md
+Generate a commit message based on the changes within the current branch. The commit message must be short and
+to-the-point and provide a summary of the changes. Then commit those changes to the current branch.
+37) Open visual code
+mkdir -p ~/.claude/commands
+cd /Users/ivovosahlik/.claude/commands && code .
+
+38)
