@@ -171,3 +171,5 @@ Prefer CSS variables (--background, --foreground)
 Ensure accessibility (contrast, readability)
 ```
 
+35) mkdir -p ~/.claude/commands -> global folder
+36) 
