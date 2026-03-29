@@ -15,3 +15,7 @@
 /task-fix       → oprava review připomínek (pokud jsou)
 
 /task-done      → merge + done + deploy
+
+
+
+/task-run       → run all, muze byt nastavene na cron :), pokud bude task vezmi ho, jinak cekej 
