@@ -32,7 +32,7 @@ export default function RootLayout({
       <body className="min-h-full flex flex-col">
         <ClerkProvider>
           <header className="flex items-center justify-between px-6 py-3 border-b border-black/[.08] dark:border-white/[.08]">
-            <span className="text-lg font-semibold tracking-tight">Lifting Diary</span>
+            <span className="text-lg font-semibold tracking-tight text-destructive">Lifting Diary</span>
             <Show when="signed-out">
               <div className="flex items-center gap-3">
                 <SignInButton mode="modal">
