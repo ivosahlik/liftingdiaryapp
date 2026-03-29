@@ -24,7 +24,9 @@
       "Bash(git merge:*)",
       "Bash(npm ls:*)",
       "Bash(npm show:*)",
-      "Bash(gh pr:*)"
+      "Bash(gh pr:*)",
+      "Bash(gh project:*)",
+      "Bash(gh auth:*)"
     ],
     "deny": []
   },
