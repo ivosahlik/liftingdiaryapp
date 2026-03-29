@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import { Geist, Geist_Mono } from "next/font/google";
 import { ClerkProvider, SignInButton, SignUpButton, Show, UserButton } from "@clerk/nextjs";
+import { Button } from "@/components/ui/button";
 import "./globals.css";
 
 const geistSans = Geist({
@@ -35,14 +36,10 @@ export default function RootLayout({
             <Show when="signed-out">
               <div className="flex items-center gap-3">
                 <SignInButton mode="modal">
-                  <button className="h-9 px-4 rounded-full border border-black/[.08] dark:border-white/[.145] text-sm font-medium transition-colors hover:border-transparent hover:bg-black/[.04] dark:hover:bg-[#1a1a1a]">
-                    Sign in
-                  </button>
+                  <Button variant="outline" size="lg">Sign in</Button>
                 </SignInButton>
                 <SignUpButton mode="modal">
-                  <button className="h-9 px-4 rounded-full bg-foreground text-background text-sm font-medium transition-colors hover:bg-[#383838] dark:hover:bg-[#ccc]">
-                    Sign up
-                  </button>
+                  <Button size="lg">Sign up</Button>
                 </SignUpButton>
               </div>
             </Show>
