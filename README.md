@@ -95,6 +95,19 @@ https://vercel.com/
 claude
 /install-github-app
 
+```   
+ ⏺ Both files exist in local commit 6faafb7 but that commit hasn't been pushed to GitHub. Vercel keeps building the old e7a13ef.
+
+You need to push your local main branch to GitHub. Please run:
+
+git push origin main
+
+❯ /install-github-app                                                                                                                                                                                                                                                                             
+⎿  GitHub Actions setup complete!```
+```
+
+28)
+
 
 
 
