@@ -210,4 +210,24 @@ claude --dangerously-skip-permissions
 - Status: Backlog to -> In Progress     
 
 43) https://skills.sh/
-                               
+
+Čemu jste se věnoval dřív, co vás profesně formovalo (škola, předchozí pracovní zkušenosti, projekty)
+Jsem Java backend developer s 10+ lety zkušeností s vývojem webových aplikací.
+Pracuji především s technologiemi Java, Spring Boot, REST API, PostgreSQL a Docker.
+Zaměřuji se na návrh škálovatelných backendových služeb a integraci externích systémů.
+Podílel jsem se na vývoji více platforem se zaměřením na výkon a stabilitu. Aktuálně se zajímám o generativní AI (LLM, prompt engineering, integrace AI do aplikací).
+
+Zájmy a volný čas (něco o vás mimo kancelář, co vás baví) - rodina, basketball, tennis, it technologie ->
+Nějaká další zajímavost  
+
+
+
+## superpowers
+https://github.com/obra/superpowers
+https://claude.com/plugins/superpowers
+https://claude.com/plugins
+
+## https://skills.sh/anthropics/skills/skill-creator
+### add skills
+npx skills add https://github.com/anthropics/skills --skill skill-creator
+  
