@@ -26,7 +26,8 @@
       "Bash(npm show:*)",
       "Bash(gh pr:*)",
       "Bash(gh project:*)",
-      "Bash(gh auth:*)"
+      "Bash(gh auth:*)",
+      "Bash(python3:*)"
     ],
     "deny": []
   },
