@@ -241,3 +241,7 @@ Output:
 │ ✓ Ready in 288ms                                                                                                                                                                                                                                                                         │
 │                      
   
+
+45) Ollama -> claude code -> https://docs.ollama.com/integrations/claude-code
+
+-> ollama launch claude
