@@ -218,6 +218,9 @@ https://claude.com/plugins/superpowers
 https://claude.com/plugins
 
 ## https://skills.sh/anthropics/skills/skill-creator
+npx skills add https://github.com/anthropics/skills --skill skill-creator
+
+## https://skills.sh/anthropics/skills/skill-creator
 ### add skills
 npx skills add https://github.com/anthropics/skills --skill skill-creator
 
