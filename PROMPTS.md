@@ -266,3 +266,16 @@ make sure the log new workout button links to the /dashboard/workout/new page
 create a plan on how to implement logging excercises and sets for a particular workout for the /dashboard/workout/[workoutId] page
 
 execute this plan apart from step 6. Seed excercise catalog
+
+
+## SKILLS
+[prompt 30 / edit mode]:
+skill-creator it is README.md
+
+create a new skill that queries the db for all the workout entries for the past year using the database url connection string in the .env file. plot this data to a bar chart using a python script,
+where the x axis has the month, and the y axis displays the number of workouts.this chart should be exported as an image.
+
+## For example:
+fix the issue in the @skill.d -> @ help you
+![Screenshot 2026-03-30 at 23.09.31.png](../../../Desktop/Screenshot%202026-03-30%20at%2023.09.31.png)
+

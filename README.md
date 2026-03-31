@@ -210,4 +210,41 @@ claude --dangerously-skip-permissions
 - Status: Backlog to -> In Progress     
 
 43) https://skills.sh/
-                               
+/skill-creator
+
+## superpowers
+https://github.com/obra/superpowers
+https://claude.com/plugins/superpowers
+https://claude.com/plugins
+
+## https://skills.sh/anthropics/skills/skill-creator
+npx skills add https://github.com/anthropics/skills --skill skill-creator
+
+## https://skills.sh/anthropics/skills/skill-creator
+### add skills
+npx skills add https://github.com/anthropics/skills --skill skill-creator
+
+44) Tasks
+/tasks ->   Background tasks    -> npm run dev        -> x is close/kill/exit beckground task                                                                                                                                                                                                                                                                  
+
+Shell details
+
+Status: running
+Runtime: 22s
+Command: npm run dev
+
+Output:
+╭──────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────╮
+│ > liftingdiaryapp@0.1.0 dev                                                                                                                                                                                                                                                              │
+│ > next dev                                                                                                                                                                                                                                                                               │
+│ ▲ Next.js 16.2.1 (Turbopack)                                                                                                                                                                                                                                                             │
+│ - Local:         http://localhost:3000                                                                                                                                                                                                                                                   │
+│ - Network:       http://192.168.1.206:3000                                                                                                                                                                                                                                               │
+│ - Environments: .env.local                                                                                                                                                                                                                                                               │
+│ ✓ Ready in 288ms                                                                                                                                                                                                                                                                         │
+│                      
+  
+
+45) Ollama -> claude code -> https://docs.ollama.com/integrations/claude-code
+
+-> ollama launch claude
